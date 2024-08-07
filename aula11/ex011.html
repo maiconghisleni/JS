@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    Qual o seu país de origem? <input type="text" id="pais">
+    <input type="button" value="Resolver" onclick="resolver()">
+    <div id="res"></div>
+
+    <script>
+        function resolver(){
+            var txtp = document.getElementById('pais')
+            var res = document.getElementById('res')
+            var pais = (txtp.value)
+            var pais = (pais.toUpperCase())
+            res.innerHTML = `Vivendo em <strong>${pais}</strong> <br>`
+            if (pais == 'BRASIL') {
+                res.innerHTML += 'Você é <strong>BRASILEIRO</strong>'
+            } else {
+                res.innerHTML += 'Você é <strong>ESTRANGEIRO</strong>'
+            }
+        }
+    </script>
+</body>
+</html>
