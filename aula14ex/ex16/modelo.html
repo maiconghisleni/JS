@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificador de idade</title>
+    <title>Contador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <body>
         <header>
-            <h1>Verificador de idade</h1>
+            <h1>Contador</h1>
         </header>
         <section>
             <div>
-                <p>Ano de Nascimento:
-                    <input type="number" name="txtano" id="txtano" min="0">
-                </p>
-                <p>Sexo:
-                    <input type="radio" name="radsex" id="mas" checked>
-                    <label for="mas">Masculino</label>
-                    <input type="radio" name="radsex" id="fem">
-                    <label for="fem">Feminino</label>
-                </p>
-                <p>
-                    <input type="button" value="Verificar" onclick="verificar()">
-                </p>
+                Inicio <input type="number" name="inicio" id="inicio"> <br>
+                Fim <input type="number" name="fim" id="fim"> <br>
+                Passo <input type="number" name="passo" id="passo"> <br>
+                <input type="button" value="Contar" onclick="contagem()">
             </div>
             <div id="res">
-                Preencha os dados acima para ver o resultado!
+                Preparando a contagem
             </div>
         </section>
         <footer>
